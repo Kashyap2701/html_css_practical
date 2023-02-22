@@ -31,6 +31,9 @@ body{
 .navbar{
     width: 100%;
     color: white;
+    position: sticky;
+    top: 0;
+    z-index: 99;
 }
 
 .nav-items{
