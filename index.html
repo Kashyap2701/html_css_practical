@@ -27,7 +27,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"
     />
-
+    
     <script src="./script.js" defer></script>
 
   </head>
@@ -35,10 +35,10 @@
   <body>
     
     <!-- 
-      - Navbar
+      ------------------ Navbar ---------------------
     -->
 
-    <nav class="navbar bg-theme-color">
+    <nav class="nav bg-theme-color">
 
       <div class="container-small">
 
@@ -67,52 +67,44 @@
               type="text"
               placeholder="Secrh for products, brands and more"
             />
-            <span class="search-icon material-symbols-outlined"> search </span>
+            <span class="material-symbols-outlined"> search </span>
           </li>
 
           <li class="nav-item dropdown">
             <button class="login-button">Login</button>
-            <span id="icon-account" class="material-symbols-outlined">
-              account_circle
-            </span>
+            <span id="icon-account" class="material-symbols-outlined">account_circle</span>
             <ul class="dropdown-content">
               <li class="dropdown-item">
-                <span class="material-symbols-outlined"> account_circle </span
-                ><a href="">Profile</a>
+                <span class="material-symbols-outlined"> account_circle </span>
+                <a href="">Profile</a>
               </li>
               <li class="dropdown-item">
-                <span class="material-symbols-outlined"> star </span
-                ><a href="">Flipkart Plus Zone</a>
+                <span class="material-symbols-outlined"> star </span>
+                <a href="">Flipkart Plus Zone</a>
               </li>
               <li class="dropdown-item">
-                <span class="material-symbols-outlined"> list_alt </span
-                ><a href="">Order</a>
+                <span class="material-symbols-outlined"> list_alt </span>
+                <a href="">Order</a>
               </li>
               <li class="dropdown-item">
-                <span class="material-symbols-outlined"> favorite </span
-                ><a href="">Wishlists</a>
+                <span class="material-symbols-outlined"> favorite </span>
+                <a href="">Wishlists</a>
               </li>
               <li class="dropdown-item">
-                <span class="material-symbols-outlined">
-                  confirmation_number </span
-                ><a href="">Rewards</a>
+                <span class="material-symbols-outlined">confirmation_number </span>
+                <a href="">Rewards</a>
               </li>
               <li class="dropdown-item">
-                <span class="material-symbols-outlined">
-                  account_balance_wallet </span
-                ><a href="">Gift Cards</a>
+                <span class="material-symbols-outlined">account_balance_wallet </span>
+                <a href="">Gift Cards</a>
               </li>
             </ul>
           </li>
 
           <li class="nav-link nav-item dropdown">
-            <span id="text">More</span
-            ><span id="icon-expand" class="material-symbols-outlined">
-              expand_more
-            </span>
-            <span id="icon-vertical-bar" class="material-symbols-outlined">
-              more_vert
-            </span>
+            <span id="text">More</span>
+            <span id="icon-expand" class="material-symbols-outlined">expand_more</span>
+            <span id="icon-vertical-bar" class="material-symbols-outlined">more_vert</span>
             <ul class="dropdown-content">
               <li class="dropdown-item">
                 <span class="material-symbols-outlined"> notifications </span>
@@ -127,8 +119,8 @@
                 ><a href="">Advertisement</a>
               </li>
               <li class="dropdown-item">
-                <span class="material-symbols-outlined"> download </span
-                ><a href="">Download App</a>
+                <span class="material-symbols-outlined"> download </span>
+                <a href="">Download App</a>
               </li>
             </ul>
           </li>
@@ -146,18 +138,10 @@
     </nav>
 
     <!-- 
-      - Category Items
+      ---------------- Category Items ----------------
     -->
 
     <section class="display-categories">
-
-      <div class="carousel-slider-wrapper">
-        <span class="material-symbols-outlined"> arrow_back_ios </span>
-      </div>
-
-      <div class="carousel-slider-wrapper arrow-forward">
-        <span class="material-symbols-outlined"> arrow_forward_ios </span>
-      </div>
 
       <ul class="categories">
 
@@ -180,7 +164,6 @@
           />
           <div>
             <span>Grocery</span>
-            <span class="material-symbols-outlined">expand_more</span>
           </div>
         </li>
 
@@ -188,11 +171,10 @@
           <img src="./images/category/mobile.png" alt="" class="category-img" />
           <div>
             <span>Mobiles</span>
-            <span class="material-symbols-outlined">expand_more</span>
           </div>
         </li>
 
-        <li class="widget-item">
+        <li class="widget-item categories-dropdown">
           <img
             src="./images/category/fashion.png"
             alt=""
@@ -202,9 +184,21 @@
             <span>Fashion</span>
             <span class="material-symbols-outlined">expand_more</span>
           </div>
+          <ul class=categories-dropdown-content>
+            <li class="categories-dropdown-item">Men's Top Wear</li>
+            <li class="categories-dropdown-item">Men's Bottom Wear</li>
+            <li class="categories-dropdown-item">Women Ethentic</li>
+            <li class="categories-dropdown-item">Women Western</li>
+            <li class="categories-dropdown-item">Men's Footwear</li>
+            <li class="categories-dropdown-item">Women's Footwear</li>
+            <li class="categories-dropdown-item">Watches and Accessories</li>
+            <li class="categories-dropdown-item">Kids</li>
+            <li class="categories-dropdown-item">Essentials</li>
+            <li class="categories-dropdown-item">Winter</li>
+          </ul>
         </li>
 
-        <li class="widget-item">
+        <li class="widget-item categories-dropdown">
           <img
             src="./images/category/electronics.png"
             alt=""
@@ -214,6 +208,23 @@
             <span>Electronics</span>
             <span class="material-symbols-outlined">expand_more</span>
           </div>
+          <ul class=categories-dropdown-content>
+            <li class="categories-dropdown-item">Audio</li>
+            <li class="categories-dropdown-item">Electronics GST Store</li>
+            <li class="categories-dropdown-item">Cameras & Accessories</li>
+            <li class="categories-dropdown-item">Computer Peripherlas</li>
+            <li class="categories-dropdown-item">Gaming</li>
+            <li class="categories-dropdown-item">Health & personal Care</li>
+            <li class="categories-dropdown-item">Laptop Accessories</li>
+            <li class="categories-dropdown-item">Laptop and Desktop</li>
+            <li class="categories-dropdown-item">Mobile Accessories</li>
+            <li class="categories-dropdown-item">Power Bank</li>
+            <li class="categories-dropdown-item">Smart Automation</li>
+            <li class="categories-dropdown-item">Smart Wearables</li>
+            <li class="categories-dropdown-item">Storage</li>
+            <li class="categories-dropdown-item">Tablets</li>
+
+          </ul>
         </li>
 
         <li class="widget-item categories-dropdown">
@@ -244,7 +255,6 @@
           />
           <div>
             <span>Appliences</span>
-            <span class="material-symbols-outlined">expand_more</span>
           </div>
         </li>
 
@@ -252,7 +262,6 @@
           <img src="./images/category/travel.png" alt="" class="category-img" />
           <div>
             <span>Travel</span>
-            <span class="material-symbols-outlined">expand_more</span>
           </div>
         </li>
 
@@ -264,7 +273,6 @@
           />
           <div>
             <span>Beauty, Toys and More</span>
-            <span class="material-symbols-outlined">expand_more</span>
           </div>
         </li>
 
@@ -276,7 +284,7 @@
     <br />
 
     <!-- 
-      - deal of the day section
+      --------------- deal of the day section ---------------
     -->
 
     <div class="container-large">
@@ -286,6 +294,7 @@
         <section class="deal-of-the-day">
 
           <div class="section-header">
+
             <div class="left">
               <p>Deals of the Day</p>
               <span class="material-symbols-outlined blue"> schedule </span>
@@ -294,6 +303,7 @@
             <div class="right">
               <button>View All</button>
             </div>
+
           </div>
 
           <hr />
@@ -318,6 +328,7 @@
                 <span>Bunch of pen</span>
                 <span class="green">Extra 80% off</span>
               </li>
+
               <li class="container-item">
                 <img
                   src="./images/dealoftheday/bunchofpen.webp"
@@ -326,6 +337,7 @@
                 <span>Bunch of pen</span>
                 <span class="green">Extra 80% off</span>
               </li>
+
               <li class="container-item">
                 <img
                   src="./images/dealoftheday/bestsellingtoys.wepe"
@@ -334,6 +346,7 @@
                 <span>Best selling toys</span>
                 <span class="green">Extra 15% off</span>
               </li>
+
               <li class="container-item">
                 <img
                   src="./images/dealoftheday/premium-case.webp"
@@ -342,6 +355,7 @@
                 <span>Premium case & covers</span>
                 <span class="green">Extra 30% off</span>
               </li>
+
               <li class="container-item">
                 <img
                   src="./images/dealoftheday/remote-control-car.webp"
@@ -350,11 +364,13 @@
                 <span>Remote control car</span>
                 <span class="green">Extra 40% off</span>
               </li>
+
               <li class="container-item">
                 <img src="./images/dealoftheday/belts.webp" alt="belts" />
                 <span>Belts</span>
                 <span class="green">Extra 40% off</span>
               </li>
+
               <li class="container-item">
                 <img
                   src="./images/dealoftheday/premium-case.webp"
@@ -363,6 +379,7 @@
                 <span>Premium case & covers</span>
                 <span class="green">Extra 30% off</span>
               </li>
+
               <li class="container-item">
                 <img
                   src="./images/dealoftheday/home-decor.webp"
@@ -371,6 +388,7 @@
                 <span>Home Decore</span>
                 <span class="green">Extra 40% off</span>
               </li>
+
               <li class="container-item">
                 <img
                   src="./images/dealoftheday/sun-glasses.webp"
@@ -379,28 +397,32 @@
                 <span>sun-glasses</span>
                 <span class="green">Extra 40% off</span>
               </li>
+
             </ul>
 
-            
-
           </div>
+
         </section>
 
         <section class="ad-banner-section">
           <img class="ad-banner" src="./images/ad-banner.png" alt="" />
         </section>
+
       </div>
+
     </div>
 
 
     <!-- 
-      - musical instruments section
+      --------------- musical instruments section ------------------
     -->
 
     <div class="container-large">
+
       <section class="book-and-instruments">
         
         <div class="section-header">
+
           <div class="left">
             <p>Music Instruments</p>
             <span>Shop now</span>
@@ -408,12 +430,15 @@
           <div class="right">
             <button>View All</button>
           </div>
+
         </div>
 
         <hr />
 
         <div class="section-container">
-          <ul class="container-items">
+
+          <ul id="section-2-container-items" class="container-items">
+
             <li class="container-item">
               <img
                 src="./images/music-instruments/harmonium.webp"
@@ -422,11 +447,13 @@
               <span>Harmoniums</span>
               <span class="green">Extra 60% off</span>
             </li>
+
             <li class="container-item">
               <img src="./images/music-instruments/flute.webp" alt="Flutes" />
               <span>Flutes</span>
               <span class="green">Extra 80% off</span>
             </li>
+
             <li class="container-item">
               <img
                 src="./images/music-instruments/guitar-and-cover.webp"
@@ -435,6 +462,7 @@
               <span>Acoustic Guitars</span>
               <span class="green">starting ₹1799</span>
             </li>
+
             <li class="container-item">
               <img
                 src="./images/music-instruments/casio-keyboard.webp"
@@ -443,38 +471,50 @@
               <span>Casio Keyboard</span>
               <span class="green">Extra 40% off</span>
             </li>
+
           </ul>
+
         </div>
 
       </section>
+
     </div>
 
 
     <!-- footer (only for mobile view) -->
 
     <div class="footer">
+
       <ul class="footer-items">
+
         <li class="footer-item">
           <span class="material-symbols-outlined"> home </span><span>Home</span>
         </li>
+
         <li class="footer-item">
           <span class="material-symbols-outlined"> category </span
           ><span>categories</span>
         </li>
+
         <li class="footer-item">
           <span class="material-symbols-outlined"> notifications </span
           ><span>Notification</span>
         </li>
+
         <li class="footer-item">
           <span class="material-symbols-outlined"> account_circle </span
           ><span>Account</span>
         </li>
+
         <li class="footer-item">
           <span class="material-symbols-outlined"> shopping_cart </span
           ><span>Cart</span>
         </li>
+
       </ul>
+
     </div>
     
   </body>
+
 </html>

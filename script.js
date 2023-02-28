@@ -17,13 +17,11 @@ function show_or_hide_btn(){
 show_or_hide_btn();
 
 prev_btn.addEventListener("click", ()=>{
-    console.log('clicked')
     product_items.scrollTo(product_items.scrollLeft - item_width*2,0);
     show_or_hide_btn();
 })
 
 next_btn.addEventListener("click", ()=>{
-    console.log('clicked')
     product_items.scrollTo(product_items.scrollLeft + item_width*2,0);
     show_or_hide_btn();
 })

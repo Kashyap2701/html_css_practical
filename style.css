@@ -19,6 +19,10 @@ ul {
   list-style-type: none;
 }
 
+button{
+  cursor: pointer;
+}
+
 .bg-theme-color {
   background-color: #2874f0;
 }
@@ -49,8 +53,116 @@ body {
   margin: 0 auto;
 }
 
-/* --------------- DROP DOWN ----------------- */
+/*-----------------------------------*\
+  # NAVBAR
+\*-----------------------------------*/
 
+.nav {
+  width: 100%;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+.nav-items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-self: center;
+  height: 60px;
+}
+
+.nav-item {
+  display: flex;
+  flex: 0.7;
+  justify-content: center;
+}
+
+.logo {
+  justify-content: flex-end;
+}
+
+.logo .logo-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  justify-self: flex-end;
+}
+
+.logo-container .logo-img {
+  height: 20px;
+  width: 72px;
+  object-fit: contain;
+}
+
+.logo-desc {
+  display: flex;
+  font-size: 11px;
+  font-style: italic;
+}
+
+.logo-desc .text-plus {
+  color: #ffe500;
+  margin: 0px 2px;
+}
+
+.logo-desc .plus-logo {
+  width: 11px;
+  height: 11px;
+  object-fit: contain;
+}
+
+.search-box {
+  flex: 5;
+  justify-content: flex-start;
+  height: 36px;
+}
+
+.search-box input {
+  width: 70%;
+  height: 36px;
+  padding: 0px 15px;
+  outline: none;
+  border: none;
+  font-size: medium;
+}
+
+.search-box input::placeholder {
+  color: gray;
+}
+
+.search-box span {
+  background-color: white;
+  color: #2874f0;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.login-button {
+  font-size: medium;
+  width: 130px;
+  padding: 5px 10px;
+  background-color: white;
+  color: #2874f0;
+  border: none;
+  border-radius: 2px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.nav-link { 
+  place-content: center;
+}
+
+#icon-account {
+  display: none;
+}
+
+#icon-vertical-bar {
+  display: none;
+}
 
 .dropdown-content {
   display: none;
@@ -87,135 +199,9 @@ body {
   display: block;
 }
 
-
-/* ---------------- NAVBAR -------------- */
-
-.navbar {
-  width: 100%;
-  color: white;
-  position: sticky;
-  top: 0;
-  z-index: 99;
-}
-
-.nav-items {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  align-self: center;
-  height: 60px;
- 
-}
-
-.nav-item {
-  display: flex;
-  flex: 0.7;
-  justify-content: center;
-}
-
-.logo {
-  justify-content: flex-end;
-}
-
-.logo-container {
-  display: flex;
-  flex-direction: column;
-  margin-right: 10px;
-  justify-self: flex-end;
-}
-
-.logo-img {
-  height: 20px;
-  width: 72px;
-  object-fit: contain;
-}
-
-.text-plus {
-  color: #ffe500;
-  margin: 0px 2px;
-}
-
-.plus-logo {
-  width: 11px;
-  height: 11px;
-  object-fit: contain;
-}
-
-.logo-desc {
-  display: flex;
-  font-size: 11px;
-  font-style: italic;
-}
-
-.search-box {
-  flex: 5;
-  /* margin-left: 10px; */
-  justify-content: flex-start;
-  height: 36px;
-}
-
-.search-box input {
-  width: 70%;
-  height: 36px;
-  padding: 0px 15px;
-  outline: none;
-  border: none;
-  font-size: medium;
-}
-
-.search-box input::placeholder {
-  color: gray;
-}
-
-.search-box span {
-  /* display: flex; */
-  background-color: white;
-  color: #2874f0;
-  padding: 5px 10px;
-  cursor: pointer;
-  font-weight: 400;
-}
-
-.login-button {
-  /* flex: 2; */
-  font-size: medium;
-  width: 130px;
-  padding: 5px 10px;
-  background-color: white;
-  color: #2874f0;
-  border: none;
-  border-radius: 2px;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.nav-link {
-  place-content: center;
-}
-
-#icon-account {
-  display: none;
-}
-
-#icon-vertical-bar {
-  display: none;
-}
-
-.carousel-slider-wrapper {
-  display: none;
-  background-color: #a0a0a0;
-  opacity: 50%;
-  padding: 5px;
-  align-self: center;
-  position: absolute;
-}
-
-
-.arrow-forward {
-  right: 0;
-}
-
-/* ------------------------------- Categories --------------------- */
+/*-----------------------------------*\
+  # CATEGORIES SECTION
+\*-----------------------------------*/
 
 .categories-dropdown-content {
   display: none;
@@ -227,6 +213,7 @@ body {
   border-radius: 2px;
   box-shadow: 0px 0px 50px rgb(118, 118, 118);
 }
+
 .categories-dropdown-item {
   display: flex;
   align-items: center;
@@ -255,13 +242,15 @@ body {
   box-shadow: 0px 0.5px gray;
   background-color: white;
   position: relative;
+  
 }
 
 .categories {
   max-width: 100%;
   margin: 0 auto;
   display: flex;
-  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: auto;
 }
 
 .categories li {
@@ -286,13 +275,13 @@ body {
   cursor: pointer;
 }
 
-/* .categories li div span{
-    text-overflow:ellipsis;
-    -o-text-overflow: ellipsis;
-} */
+
+/*-----------------------------------*\
+  # SECTION
+\*-----------------------------------*/
+
 .deal-of-the-day {
   background-color: white;
-  /* border: 2px solid black; */
   max-width: 1250px;
   margin-right: 10px;
 }
@@ -338,13 +327,19 @@ body {
   display: flex;
   align-items: center;
 }
+
 .left{
     flex: 2;
 }
+
 .section-container {
   overflow-x: hidden;
   position: relative;
   scroll-behavior: smooth;
+}
+
+#section-2-container-items{
+  overflow: auto;
 }
 
 .product-carousel-slider-wrapper {
@@ -370,7 +365,6 @@ body {
   display: flex;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  /* width: 1000px; */
 }
 
 .container-item {
@@ -394,7 +388,6 @@ body {
 }
 
 .ad-banner-section {
-  /* border: 2px solid black; */
   flex: 1;
 }
 
@@ -411,7 +404,9 @@ body {
   margin-bottom: 30px;
 }
 
-/* ----------------- FOOTER ----------------------- */
+/*-----------------------------------*\
+  # FOOTER
+\*-----------------------------------*/
 
 .footer {
   display: none;
@@ -443,6 +438,7 @@ body {
     color: #2874f0;
     
 }
+
 /*-----------------------------------*\
   #MEDIA QUERY
 \*-----------------------------------*/
@@ -498,6 +494,7 @@ body {
 }
 
 /* ----------------------------------- TABLATE VIEW ------------------------------------- */
+
 @media screen and (max-width: 768px) {
   .nav-item {
     flex: 0;
@@ -555,7 +552,7 @@ body {
 /* ----------------------------------- MOBILE VIEW ---------------------------------------- */
 
 @media screen and (max-width: 425px) {
-  .navbar {
+  .nav {
     padding: 10px 0px;
   }
 
