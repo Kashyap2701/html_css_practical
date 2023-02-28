@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flipkart Clone</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
     <!-- custome css link -->
 
@@ -24,28 +27,33 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"
     />
+
+    <script src="./script.js" defer></script>
+
   </head>
 
   <body>
+    
     <!-- 
       - Navbar
     -->
 
     <nav class="navbar bg-theme-color">
+
       <div class="container-small">
+
         <ul class="nav-items">
+
           <li class="nav-item logo">
             <div class="logo-container">
-              <a href="www.flipkart.com" target="_blank"
-                ><img
+              <a href="www.flipkart.com" target="_blank">
+                <img
                   class="logo-img"
                   src="./images/flipkart.png"
-                  alt="flipkart-logo"
-              /></a>
-              <a href="" class="logo-desc">
-                Explore<span class="text-plus">Plus</span
-                ><img
-                  width="10"
+                  alt="flipkart-logo"/>
+              </a>
+              <a href="" class="logo-desc">Explore<span class="text-plus">Plus</span>
+                <img
                   class="plus-logo"
                   src="./images/plus_aef861.png"
                   alt="plus-logo"
@@ -53,6 +61,7 @@
               </a>
             </div>
           </li>
+
           <li class="nav-item search-box">
             <input
               type="text"
@@ -60,6 +69,7 @@
             />
             <span class="search-icon material-symbols-outlined"> search </span>
           </li>
+
           <li class="nav-item dropdown">
             <button class="login-button">Login</button>
             <span id="icon-account" class="material-symbols-outlined">
@@ -108,30 +118,31 @@
                 <span class="material-symbols-outlined"> notifications </span>
                 <a href="">Notification Prefrence</a>
               </li>
-
               <li class="dropdown-item">
                 <span class="material-symbols-outlined"> help </span
                 ><a href="">24x7 Customer Care</a>
               </li>
-
               <li class="dropdown-item">
                 <span class="material-symbols-outlined"> monitoring </span
                 ><a href="">Advertisement</a>
               </li>
-
               <li class="dropdown-item">
                 <span class="material-symbols-outlined"> download </span
                 ><a href="">Download App</a>
               </li>
             </ul>
           </li>
+
           <li class="nav-link nav-item">
             <span id="icon-shopping-cart" class="material-symbols-outlined">
               shopping_cart </span
             ><span id="text">Cart</span>
           </li>
+
         </ul>
+
       </div>
+
     </nav>
 
     <!-- 
@@ -144,8 +155,13 @@
         <span class="material-symbols-outlined"> arrow_back_ios </span>
       </div>
 
+      <div class="carousel-slider-wrapper arrow-forward">
+        <span class="material-symbols-outlined"> arrow_forward_ios </span>
+      </div>
+
       <ul class="categories">
-        <li class="widget-item">
+
+        <li class="widget-item dropdown">
           <img
             src="./images/category/top-offers.png"
             alt=""
@@ -155,6 +171,7 @@
             <span>Top Offers</span>
           </div>
         </li>
+
         <li class="widget-item">
           <img
             src="./images/category/grocery.png"
@@ -166,6 +183,7 @@
             <span class="material-symbols-outlined">expand_more</span>
           </div>
         </li>
+
         <li class="widget-item">
           <img src="./images/category/mobile.png" alt="" class="category-img" />
           <div>
@@ -173,6 +191,7 @@
             <span class="material-symbols-outlined">expand_more</span>
           </div>
         </li>
+
         <li class="widget-item">
           <img
             src="./images/category/fashion.png"
@@ -184,6 +203,7 @@
             <span class="material-symbols-outlined">expand_more</span>
           </div>
         </li>
+
         <li class="widget-item">
           <img
             src="./images/category/electronics.png"
@@ -195,13 +215,27 @@
             <span class="material-symbols-outlined">expand_more</span>
           </div>
         </li>
-        <li class="widget-item">
+
+        <li class="widget-item categories-dropdown">
           <img src="./images/category/home.png" alt="" class="category-img" />
           <div>
             <span>Home</span>
             <span class="material-symbols-outlined">expand_more</span>
           </div>
+          <ul class=categories-dropdown-content>
+            <li class="categories-dropdown-item">Home Furniture</li>
+            <li class="categories-dropdown-item">Furniture Studio</li>
+            <li class="categories-dropdown-item">Living Room Furniture</li>
+            <li class="categories-dropdown-item">Kitchebn and Dining</li>
+            <li class="categories-dropdown-item">Bedroom Furniture</li>
+            <li class="categories-dropdown-item">Home Decore</li>
+            <li class="categories-dropdown-item">Workspace and Furniture</li>
+            <li class="categories-dropdown-item">Tools and Utility</li>
+            <li class="categories-dropdown-item">Kids furniture</li>
+            <li class="categories-dropdown-item">Pets</li>
+          </ul>
         </li>
+
         <li class="widget-item">
           <img
             src="./images/category/appliences.png"
@@ -213,6 +247,7 @@
             <span class="material-symbols-outlined">expand_more</span>
           </div>
         </li>
+
         <li class="widget-item">
           <img src="./images/category/travel.png" alt="" class="category-img" />
           <div>
@@ -220,6 +255,7 @@
             <span class="material-symbols-outlined">expand_more</span>
           </div>
         </li>
+
         <li class="widget-item">
           <img
             src="./images/category/Beauty,Toys and More.png"
@@ -231,10 +267,9 @@
             <span class="material-symbols-outlined">expand_more</span>
           </div>
         </li>
+
       </ul>
-      <div class="carousel-slider-wrapper arrow-forward">
-        <span class="material-symbols-outlined"> arrow_forward_ios </span>
-      </div>
+
     </section>
 
     <br />
@@ -245,8 +280,11 @@
     -->
 
     <div class="container-large">
+
       <div class="section-wrapper">
+
         <section class="deal-of-the-day">
+
           <div class="section-header">
             <div class="left">
               <p>Deals of the Day</p>
@@ -257,12 +295,29 @@
               <button>View All</button>
             </div>
           </div>
+
           <hr />
+
           <div class="section-container">
-            <div class="product-carousel-slider-wrapper product-arrow-back">
+
+            <div id="prev-btn" class="product-carousel-slider-wrapper product-arrow-back">
               <span class="material-symbols-outlined"> arrow_back_ios </span>
             </div>
+
+            <div id="next-btn" class="product-carousel-slider-wrapper product-arrow-forward">
+              <span class="material-symbols-outlined"> arrow_forward_ios </span>
+            </div>
+
             <ul class="container-items">
+
+              <li class="container-item">
+                <img
+                  src="./images/dealoftheday/bunchofpen.webp"
+                  alt="bunch-of-pen"
+                />
+                <span>Bunch of pen</span>
+                <span class="green">Extra 80% off</span>
+              </li>
               <li class="container-item">
                 <img
                   src="./images/dealoftheday/bunchofpen.webp"
@@ -302,6 +357,14 @@
               </li>
               <li class="container-item">
                 <img
+                  src="./images/dealoftheday/premium-case.webp"
+                  alt="premium-case-&-covers"
+                />
+                <span>Premium case & covers</span>
+                <span class="green">Extra 30% off</span>
+              </li>
+              <li class="container-item">
+                <img
                   src="./images/dealoftheday/home-decor.webp"
                   alt="hoome-decor"
                 />
@@ -317,9 +380,9 @@
                 <span class="green">Extra 40% off</span>
               </li>
             </ul>
-            <div class="product-carousel-slider-wrapper product-arrow-forward">
-              <span class="material-symbols-outlined"> arrow_forward_ios </span>
-            </div>
+
+            
+
           </div>
         </section>
 
