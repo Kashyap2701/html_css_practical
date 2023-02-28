@@ -83,7 +83,7 @@ body {
   justify-content: flex-end;
 }
 
-.logo .logo-container {
+.logo-container {
   display: flex;
   flex-direction: column;
   margin-right: 10px;
